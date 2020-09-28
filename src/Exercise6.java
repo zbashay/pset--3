@@ -1,5 +1,4 @@
-package src;
-
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Exercise6 {
@@ -32,10 +31,11 @@ public class Exercise6 {
 
         double grosspay = (monday * wage) + (tuesday * wage) + (wednesday * wage) + (thursday * wage) + (friday * wage) + (saturday * wage) + (sunday * wage);
 
-        String strDouble = String.format("%.2f", grosspay);
+        NumberFormat defaultFormat = NumberFormat.getCurrencyInstance();
+        defaultFormat.setMinimumFractionDigits(2);
 
         System.out.println(" ");
-        System.out.println("$" + (strDouble) + ".");
+        System.out.println((defaultFormat.format(grosspay)) + ".");
 
         in.close();
     }

@@ -1,5 +1,3 @@
-package src;
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -20,5 +18,6 @@ public class Exercise10 {
         System.out.println(" ");
         System.out.println("Celsius    : " + decimalFormat.format(celsius));
         System.out.print("Kelvin     : " + decimalFormat.format(kelvin));
+        System.out.println(" ");
     }
 }

@@ -1,18 +1,16 @@
-package src;
-
 import java.util.Scanner;
 
 public class Exercise8 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Students : ");
+        System.out.print("Students : ");
         double students = in.nextDouble();
 
-        System.out.println("Teachers : ");
+        System.out.print("Teachers : ");
         double teachers = in.nextDouble();
 
-        System.out.println("Capacity : ");
+        System.out.print("Capacity : ");
         double capacity = in.nextDouble();
 
         double passengers = students + teachers;

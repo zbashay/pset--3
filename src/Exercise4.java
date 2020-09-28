@@ -1,7 +1,5 @@
-package src;
-
-import java.text.DecimalFormat;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Exercise4 {
     public static void main(String[] args) {

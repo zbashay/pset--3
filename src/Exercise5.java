@@ -1,5 +1,3 @@
-package src;
-
 import java.util.Scanner;
 
 public class Exercise5 {
@@ -40,3 +38,4 @@ public class Exercise5 {
         in.close();
     }
 }
+

@@ -1,5 +1,3 @@
-package src;
-
 import java.util.Scanner;
 
 public class Exercise9 {
@@ -13,10 +11,10 @@ public class Exercise9 {
         int dime = 10;
         int nickel = 5;
 
-        double cheese = amount * 100;
+        double total = amount * 100;
 
-        double change1 = cheese % quarter;
-        double quarters = (cheese - change1) / quarter;
+        double change1 = total % quarter;
+        double quarters = (total - change1) / quarter;
 
         double change2 = change1 % dime;
         double dimes = (change1 - change2) / dime;
