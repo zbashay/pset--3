@@ -1,20 +1,22 @@
+package src;
+
 import java.util.Scanner;
 
 public class Exercise9 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Amount : ");
+        System.out.print("Amount : ");
         double amount = in.nextDouble();
 
         int quarter = 25;
         int dime = 10;
         int nickel = 5;
 
-        double total = amount * 100;
+        double cheese = amount * 100;
 
-        double change1 = total % quarter;
-        double quarters = (total - change1) / quarter;
+        double change1 = cheese % quarter;
+        double quarters = (cheese - change1) / quarter;
 
         double change2 = change1 % dime;
         double dimes = (change1 - change2) / dime;

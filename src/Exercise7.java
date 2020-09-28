@@ -1,3 +1,4 @@
+package src;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -6,19 +7,19 @@ public class Exercise7 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Salary  :");
+        System.out.print("Salary  : ");
         double salary = in.nextDouble();
 
-        System.out.println("401(k)  :");
-        double fourohone = in.nextDouble();
+        System.out.print("401(k)  : ");
+        double fourohonekay = in.nextDouble();
 
-        System.out.println("Federal :");
+        System.out.print("Federal : ");
         double federal = in.nextDouble();
 
-        System.out.println("State   :");
+        System.out.print("State   : ");
         double state = in.nextDouble();
 
-        double posttax = (salary * ((100 - fourohone) / 100));
+        double posttax = (salary * ((100 - fourohonekay) / 100));
 
         double takehome = posttax - (posttax * (federal / 100)) - (posttax * (state / 100));
 
